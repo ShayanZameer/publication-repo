@@ -1,0 +1,39 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+/* Remove default appearance */
+input[type="range"] {
+    -webkit-appearance: none;
+    width: 60%;
+    height: 18px;
+    background: yellow;
+    border-radius: 5px;
+  }
+  
+  /* Custom track styles */
+  input[type="range"]::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 20px;
+    height: 20px;
+    background: yellowgreen;
+    border: 2px solid #fff;
+    border-radius: 50%;
+    cursor: pointer;
+  }
+  
+  /* Style the range track (progress) */
+  input[type="range"]::-webkit-slider-runnable-track {
+    height: 8px;
+    background: yellow;
+    border-radius: 5px;
+  }
+  
+  /* Add some style to the thumb when dragged or active */
+  input[type="range"]:active::-webkit-slider-thumb {
+    background: green;
+  }
+
+
